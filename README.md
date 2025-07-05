@@ -1,8 +1,18 @@
-# url-shortener
+# URL Shortener
 
-This complete implementation includes:
-1. Flask backend with SQLite database
-2. Frontend with HTML, CSS, and JavaScript
-3. API endpoints for shortening URLs and getting analytics
-4. Proper project structure
-5. Documentation
+A simple URL shortening service with click tracking.
+
+## Features
+
+- Shorten long URLs to convenient short links
+- Optional custom short codes
+- Track click counts for each shortened URL
+- Simple web interface
+- REST API for programmatic access
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/kanaimandal2002/url-shortener.git
+   cd url-shortener
