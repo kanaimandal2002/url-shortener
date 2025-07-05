@@ -10,7 +10,6 @@ document.getElementById('shorten-form').addEventListener('submit', async (e) => 
         url: urlInput.value,
         custom_code: customCode.value || undefined
     };
-    
     try {
         const response = await fetch('/shorten', {
             method: 'POST',
@@ -24,7 +23,6 @@ document.getElementById('shorten-form').addEventListener('submit', async (e) => 
             const error = await response.json();
             throw new Error(error.error || 'Failed to shorten URL');
         }
-        
         const result = await response.json();
         shortUrlLink.textContent = result.short_url;
         shortUrlLink.href = result.short_url;
